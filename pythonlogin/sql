@@ -1,0 +1,36 @@
+CREATE TABLE IF NOT EXISTS `info` (
+  	`Name` varchar(100) NOT NULL,
+  	`Dob` DATE(50) NOT NULL,
+  	`Gender` varchar(50) NOT NULL,
+  	`Offile_Location` varchar(50) NOT NULL,
+  	`Office_Email_ID` varchar(100) NOT NULL,
+  	`Office_Mobile_Number` varchar(20) NOT NULL,
+  	`Employer_with_Experience` varchar(1000) NOT NULL,
+  	`Previous_Employer1_Experience` varchar(1000) NOT NULL,
+  	`Previous_Employer2_Experience` varchar(1000) NOT NULL,
+  	`Soft_Skills` varchar(1000) NOT NULL,
+  	`Certifications` varchar(1000) NOT NULL,
+  	`Projects_Worked` varchar(1000) NOT NULL,
+  	`Hobbies` varchar(1000) NOT NULL,
+  	`Personal_Mobile_No` varchar(20) NOT NULL,
+  	`Permanent_Address` varchar(1000) NOT NULL );
+  
+
+  	
+
+
+Name = request.form['Name']
+        Dob = request.form['Dob']
+        Gender = request.form['Gender']
+        Offile_Location = request.form['Office_Location']
+        Office_Email_ID = request.form['Office_Email_ID']
+        Office_Mobile_Number = request.form['Office_Mobile_Number']
+        Employer_with_Experience = request.form['Employer_with_Experience']
+        Previous_Employer1_Experience = request.form['Previous_Employer1_Experience']
+        Previous_Employer2_Experience = request.form['Previous_Employer2_Experience']
+        Soft_Skills = request.form['Soft Skills']
+        Certifications = request.form['Certifications']
+        Projects_Worked = request.form['Projects Worked']
+        Hobbies = request.form['Hobbies']
+        Personal_Mobile_No = request.form['Personal Mobile No']
+        Permanent_Address = request.form['Permanent Address']

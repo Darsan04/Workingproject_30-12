@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+    <p>Your Info is below:</p>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{ info['Name'] }}</td>
+        </tr>
+        <tr>
+            <td>Dob:</td>
+            <td>{{ info['Dob'] }}</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>{{ info['Gender'] }}</td>
+        </tr>
+        <tr>
+            <td>Office Location:</td>
+            <td>{{ info['Office Location'] }}</td>
+        </tr>
+        <tr>
+            <td>Office Email_ID:</td>
+            <td>{{ info['Office Email_ID'] }}</td>
+        </tr>
+        <tr>
+            <td>Office Mobile_Number:</td>
+            <td>{{ info['Office Mobile_Number'] }}</td>
+        </tr>
+        <tr>
+            <td>Employer with Experience:</td>
+            <td>{{ info['Employer with Experience'] }}</td>
+        </tr>
+        <tr>
+            <td>Previous Employer1 Experience:</td>
+            <td>{{ info['Previous Employer1 Experience'] }}</td>
+        </tr>
+        <tr>
+            <td>Previous Employer2 Experience:</td>
+            <td>{{ info['Previous Employer2 Experience'] }}</td>
+        </tr>
+        <tr>
+            <td>Soft_Skills:</td>
+            <td>{{ info['Soft_Skills'] }}</td>
+        </tr>
+        <tr>
+            <td>Certifications:</td>
+            <td>{{ info['Certifications'] }}</td>
+        </tr>
+        <tr>
+            <td>Projects Worked:</td>
+            <td>{{ info['Projects Worked'] }}</td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>{{ info['Hobbies'] }}</td>
+        </tr>
+        <tr>
+            <td>Personal Mobile No :</td>
+            <td>{{ info['Personal Mobile No '] }}</td>
+        </tr>
+        <tr>
+            <td>Permanent Address:</td>
+            <td>{{ info['Permanent Address'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

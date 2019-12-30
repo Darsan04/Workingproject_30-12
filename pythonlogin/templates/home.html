@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>EMPLOYEE DETAILS</h2>
+<p>Welcome back, {{ username }}!</p>
+<h1><left>General Info:</left></h1>
+			<form name="attendence" action='/pythonlogin/home' method="post">
+			<table>
+				<tr>
+					<td><h2>Name</h2></td>
+					<td>
+						<input type="text" class="textbox" name="Name" required />
+					</td>
+				</tr>
+				<tr>
+					<td ><h2>Dob</h2></td>
+
+					<td>
+						<input type='Date' name="Dob" required class="textbox" value='<?php echo Date('YY-m-d');? >
+					</td>
+				</tr>
+
+				<tr>
+					<td><h2>Gender</h2></td>
+					<td><select type="text" class="textbox" name="Gender" required />
+							<option></option>
+							<option>Male</option>
+							<option>Female</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td><h2>Offile_Location</h2></td>
+					<td><select type="text" class="textbox" name="Office_Location" required />
+							<option></option>
+							<option>EC</option>
+							<option>SEZ</option>
+							<option>ONSITE</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td><h2>Office_Email_ID</h2></td>
+					<td><input type="text" class="textbox" name="Office_Email_ID" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Office_Mobile_Number</h2></td>
+					<td><input type="text" class="textbox" name="Office_Mobile_Number" required /></td>
+				</tr>
+			</table>
+			<table>
+				<h1 align="left">Offile Info</h1>
+				<tr>
+					<td><h2>Employer_with_Experience</h2></td>
+					<td><input type="text" class="textbox" name="Employer_with_Experience" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Previous_Employer1_Experience</h2></td>
+					<td><input type="text" class="textbox" name="Previous_Employer1_Experience" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Previous_Employer2_Experience</h2></td>
+					<td><input type="text" class="textbox" name="Previous_Employer2_Experience" required /></td>
+				</tr>
+			</table>
+			<table>
+				<h1 align="left">Technical Info</h1>
+				<tr>
+					<td><h2>Soft_Skills</h2></td>
+					<td><input type="text" class="textbox" name="Soft Skills" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Certifications</h2></td>
+					<td><input type="text" class="textbox" name="Certifications" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Projects_Worked</h2></td>
+					<td><input type="text" class="textbox" name="Projects Worked" required /></td>
+				</tr>
+			</table>
+			<table>
+				<h1 align="left">Personal Info</h1>
+				<tr>
+					<td><h2>Hobbies</h2></td>
+					<td><input type="text" class="textbox" name="Hobbies" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Personal_Mobile_No</h2></td>
+					<td><input type="text" class="textbox" name="Personal Mobile No" required /></td>
+				</tr>
+				<tr>
+					<td><h2>Permanent_Address</h2></td>
+					<td><input type="text" class="textbox" name="Permanent Address" required /></td>
+				</tr>
+			</table>
+				<tr>
+					<td colspan="1"></td>
+					<td><input type="submit" value="Submit" /></td>
+				</tr>
+			</form>
+{% endblock %}
